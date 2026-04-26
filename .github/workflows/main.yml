@@ -3,10 +3,10 @@ name: Python Script Workflow
 on:
   push:
     branches:
-      - main  # 每当提交推送到 main 分支时执行
+      - master  # 每当提交推送到 master 分支时执行
   pull_request:
     branches:
-      - main  # 提交 PR 时触发执行
+      - master  # 提交 PR 时触发执行
 
 jobs:
   build:
