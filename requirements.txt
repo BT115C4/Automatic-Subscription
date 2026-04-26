@@ -1,0 +1,5 @@
+requests
+ddddocr
+Pillow
+selenium
+chromedriver-autoinstaller
