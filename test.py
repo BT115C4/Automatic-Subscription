@@ -133,7 +133,7 @@ def login(driver, email, password):
 
 # ========= 领取试用 =========
 def claim_trial(driver):
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 30)
     driver.get("https://a.aiguobit.com/users/ucenter")
 
     try:
