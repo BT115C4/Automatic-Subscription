@@ -9,7 +9,7 @@ on:
       - master  # 提交 PR 时触发执行
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest  # GitHub Actions 使用的操作系统
 
     steps:
@@ -24,8 +24,16 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # 安装项目依赖
+        pip install --no-cache-dir -r requirements.txt  # 安装项目依赖
 
     - name: Run the script
       run: |
-        python test.py  # 这里的路径可以根据你的实际代码位置调整
+        python test.py  # 执行你的 Python 脚本
+
+    - name: Commit and push Subscription.yaml to repository
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add Subscription.yaml  # 添加文件到暂存区
+        git commit -m "Add Subscription.yaml"  # 提交文件
+        git push origin master  # 将文件推送到 master 分支
