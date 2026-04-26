@@ -1,0 +1,31 @@
+name: Python Script Workflow
+
+on:
+  push:
+    branches:
+      - main  # 每当提交推送到 main 分支时执行
+  pull_request:
+    branches:
+      - main  # 提交 PR 时触发执行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # GitHub Actions 使用的操作系统
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # 拉取代码库
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # 设置 Python 版本（可以根据需要更改）
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # 安装项目依赖
+
+    - name: Run the script
+      run: |
+        python c:/Users/Administrator/Documents/Python/test.py  # 这里的路径可以根据你的实际代码位置调整
