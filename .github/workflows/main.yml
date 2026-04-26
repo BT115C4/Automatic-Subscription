@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main  # 提交 PR 时触发执行
-  workflow_dispatch
+
 jobs:
   build:
     runs-on: ubuntu-latest  # GitHub Actions 使用的操作系统
