@@ -28,4 +28,4 @@ jobs:
 
     - name: Run the script
       run: |
-        python c:/Users/Administrator/Documents/Python/test.py  # 这里的路径可以根据你的实际代码位置调整
+        python test.py  # 这里的路径可以根据你的实际代码位置调整
