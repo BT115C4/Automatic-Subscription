@@ -146,7 +146,7 @@ def claim_trial(driver):
         pass
 
 
-# ========= 获取订阅 =========
+# ========= 获取订阅链接 =========
 def get_sub_link(driver):
     wait = WebDriverWait(driver, 10)
     driver.get("https://a.aiguobit.com/users/ucenter")
@@ -164,6 +164,21 @@ def get_sub_link(driver):
     return match.group(1)
 
 
+# ========= 下载并重命名订阅文件 =========
+def download_subscription_file(link):
+    # 发送 GET 请求下载 YAML 文件
+    response = requests.get(link)
+
+    # 检查请求是否成功
+    if response.status_code == 200:
+        # 将下载的内容保存为 Subscription.yaml
+        with open("Subscription.yaml", "wb") as file:
+            file.write(response.content)
+        print("Subscription.yaml has been downloaded and saved.")
+    else:
+        print(f"Failed to download the file. Status code: {response.status_code}")
+
+
 # ========= 主流程 =========
 def main():
     email, password = register()
@@ -177,6 +192,9 @@ def main():
         link = get_sub_link(driver)
         print("\n订阅链接：")
         print(link)
+
+        # 下载订阅文件并重命名为 Subscription.yaml
+        download_subscription_file(link)
 
     finally:
         driver.quit()
