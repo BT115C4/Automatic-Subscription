@@ -1,5 +1,5 @@
 name: Python Script Workflow
-
+on: workflow_dispatch
 on:
   push:
     branches:
