@@ -45,3 +45,16 @@ jobs:
         else
           echo "No Subscription.yaml found to commit."
         fi
+
+    - name: Commit Subscription2.yaml to repository
+      run: |
+        # Check if the Subscription2.yaml exists
+        if [ -f "Subscription2.yaml" ]; then
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add Subscription2.yaml
+          git commit -m "Add Subscription2.yaml"
+          git push
+        else
+          echo "No Subscription2.yaml found to commit."
+        fi
