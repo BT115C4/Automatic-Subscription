@@ -179,6 +179,24 @@ def download_subscription_file(link):
         print(f"Failed to download the file. Status code: {response.status_code}")
 
 
+# ========= 下载并重命名第二个订阅文件 =========
+def download_second_subscription_file(link):
+    # 去掉链接中的查询字符串（问号及其后面部分）
+    clean_link = link.split('?')[0]
+
+    # 发送 GET 请求下载 YAML 文件
+    response = requests.get(clean_link)
+
+    # 检查请求是否成功
+    if response.status_code == 200:
+        # 将下载的内容保存为 Subscription2.yaml
+        with open("Subscription2.yaml", "wb") as file:
+            file.write(response.content)
+        print("Subscription2.yaml has been downloaded and saved.")
+    else:
+        print(f"Failed to download the file. Status code: {response.status_code}")
+
+
 # ========= 主流程 =========
 def main():
     email, password = register()
@@ -193,8 +211,11 @@ def main():
         print("\n订阅链接：")
         print(link)
 
-        # 下载订阅文件并重命名为 Subscription.yaml
+        # 下载并重命名为 Subscription.yaml
         download_subscription_file(link)
+
+        # 下载第二个订阅文件并重命名为 Subscription2.yaml
+        download_second_subscription_file(link)
 
     finally:
         driver.quit()
