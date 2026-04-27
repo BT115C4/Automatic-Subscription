@@ -124,7 +124,7 @@ def init_driver():
 def login(driver, email, password):
     driver.get("https://a.aiguobit.com/users/ucenter")
 
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 30)
     wait.until(EC.presence_of_element_located((By.NAME, "email"))).send_keys(email)
     driver.find_element(By.NAME, "password").send_keys(password + "\n")
 
