@@ -28,49 +28,17 @@ jobs:
 
     - name: Run the script
       run: |
-        python test.py  # 执行你的 Python 脚本
+        python main.py  # 执行你的 Python 脚本
 
-    - name: Get latest release and remove old Subscription.yaml
+    - name: Commit Subscription.yaml to repository
       run: |
-        # 获取最新的 GitHub release
-        latest_release=$(curl --header "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                              --request GET \
-                              --url "https://api.github.com/repos/${{ github.repository }}/releases/latest")
-
-        # 获取最新 Release ID
-        release_id=$(echo $latest_release | jq -r '.id')
-
-        # 获取所有附件，找到 Subscription.yaml 并删除它
-        assets=$(curl --header "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                      --request GET \
-                      --url "https://api.github.com/repos/${{ github.repository }}/releases/$release_id/assets")
-
-        # 查找 Subscription.yaml 的 asset ID
-        asset_id=$(echo $assets | jq -r '.[] | select(.name == "Subscription.yaml") | .id')
-
-        # 如果找到了资产，删除它
-        if [ "$asset_id" != "null" ]; then
-          curl --header "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-               --request DELETE \
-               --url "https://api.github.com/repos/${{ github.repository }}/releases/assets/$asset_id"
-          echo "Deleted old Subscription.yaml attachment."
+        # Check if the Subscription.yaml exists
+        if [ -f "Subscription.yaml" ]; then
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add Subscription.yaml
+          git commit -m "Add Subscription.yaml"
+          git push
         else
-          echo "No existing Subscription.yaml found, no need to delete."
+          echo "No Subscription.yaml found to commit."
         fi
-
-    - name: Create new release or update existing release
-      run: |
-        # 如果没有现有 Release，则创建一个新的 Release
-        release_response=$(curl --header "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-                                 --data '{"tag_name": "latest","name": "latest","body": "Automatic release with Subscription.yaml"}' \
-                                 --request POST \
-                                 --url "https://api.github.com/repos/${{ github.repository }}/releases")
-        
-        # 获取当前 Release ID
-        release_id=$(echo $release_response | jq -r '.id')
-
-        # 上传新的 Subscription.yaml 文件
-        curl --header "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-             --upload-file Subscription.yaml \
-             --url "https://uploads.github.com/repos/${{ github.repository }}/releases/$release_id/assets?name=Subscription.yaml"
-        echo "Uploaded new Subscription.yaml file."
