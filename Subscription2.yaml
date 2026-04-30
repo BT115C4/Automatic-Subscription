@@ -126,8 +126,8 @@ dns:
 proxies:
     - name: 日本域名快速线路01
       server: jp01.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -136,8 +136,8 @@ proxies:
       protocol-param: ""
     - name: 日本域名快速线路02
       server: hk01.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -146,8 +146,8 @@ proxies:
       protocol-param: ""
     - name: 日本ip快速线路01
       server: 129.212.217.99
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -156,8 +156,8 @@ proxies:
       protocol-param: ""
     - name: 日本ip快速线路02
       server: 45.77.24.51
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -166,8 +166,8 @@ proxies:
       protocol-param: ""
     - name: 香港域名快速线路01
       server: hk02.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -176,8 +176,8 @@ proxies:
       protocol-param: ""
     - name: 香港ip快速线路01
       server: 45.55.108.26
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -186,8 +186,8 @@ proxies:
       protocol-param: ""
     - name: 韩国域名快速线路01
       server: kr01.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -196,8 +196,8 @@ proxies:
       protocol-param: ""
     - name: 韩国ip快速线路01
       server: 129.212.217.99
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -206,8 +206,8 @@ proxies:
       protocol-param: ""
     - name: 新加坡域名快速线路01
       server: sg01.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -216,8 +216,8 @@ proxies:
       protocol-param: ""
     - name: 新加坡域名快速线路02
       server: sg02.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -226,8 +226,8 @@ proxies:
       protocol-param: ""
     - name: 新加坡ip快速线路01
       server: 129.212.217.99
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -236,8 +236,8 @@ proxies:
       protocol-param: ""
     - name: 新加坡ip快速线路02
       server: 104.248.97.234
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -246,8 +246,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路01
       server: us01.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -256,8 +256,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路02
       server: us02.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -266,8 +266,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路03
       server: us03.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -276,8 +276,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路04
       server: us04.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -286,8 +286,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路05
       server: us05.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -296,8 +296,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路06
       server: us06.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -306,8 +306,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路07
       server: us07.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -316,8 +316,8 @@ proxies:
       protocol-param: ""
     - name: 美国域名快速线路08
       server: us08.vipssr.top
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -326,8 +326,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路01
       server: 45.55.108.26
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -336,8 +336,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路02
       server: 129.212.217.99
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -346,8 +346,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路03
       server: 45.55.108.26
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -356,8 +356,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路04
       server: 45.55.108.26
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -366,8 +366,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路05
       server: 138.68.39.4
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -376,8 +376,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路06
       server: 45.55.108.26
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -386,8 +386,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路07
       server: 45.32.86.240
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
@@ -396,8 +396,8 @@ proxies:
       protocol-param: ""
     - name: 美国ip快速线路08
       server: 45.63.58.201
-      port: 20979
-      password: 40c70634
+      port: 21915
+      password: af679902
       type: ssr
       cipher: aes-256-cfb
       obfs: http_simple
