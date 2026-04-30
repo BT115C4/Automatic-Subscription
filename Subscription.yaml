@@ -127,133 +127,133 @@ proxies:
     - name: 日本域名快速线路01
       server: jp01.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 日本域名快速线路02
       server: jp02.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 日本域名快速线路03
       server: jp03.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 日本ip快速线路01
       server: 129.212.217.99
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 日本ip快速线路02
       server: 45.77.24.51
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 日本ip快速线路03
       server: 66.42.40.60
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 韩国域名快速线路01
       server: kr01.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 韩国ip快速线路01
       server: 129.212.217.99
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国域名快速线路01
       server: us01.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国域名快速线路02
       server: us02.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国域名快速线路03
       server: us03.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国域名快速线路04
       server: us04.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国域名快速线路05
       server: us05.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国ip快速线路01
       server: 129.212.217.99
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国ip快速线路02
       server: 45.55.108.26
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国ip快速线路03
       server: 45.55.108.26
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国ip快速线路04
       server: 45.32.86.240
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 美国ip快速线路05
       server: 45.63.58.201
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 新加坡域名快速线路01
       server: sg01.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 新加坡域名快速线路02
       server: sg02.hys.vipssr.top
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 新加坡ip快速线路01
       server: 129.212.217.99
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
     - name: 新加坡ip快速线路02
       server: 45.55.108.26
       port: 443
-      password: 23562:d855a59c
+      password: 23805:6b7d8f78
       type: hysteria2
       skip-cert-verify: true
 proxy-groups:
